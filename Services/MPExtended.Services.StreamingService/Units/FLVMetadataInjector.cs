@@ -35,10 +35,15 @@ namespace MPExtended.Services.StreamingService.Units
         public bool IsDataStreamConnected { get; set; }
         public bool IsLogStreamConnected { get; set; }
 
+        private StreamContext context;
         private Thread doInjectionThread;
-
         private NamedPipe pipeClient;
         private NamedPipe pipeServer;
+
+        public FLVMetadataInjector(StreamContext context)
+        {
+            this.context = context;
+        }
 
         public bool Setup()
         {

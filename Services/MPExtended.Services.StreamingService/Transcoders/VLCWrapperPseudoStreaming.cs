@@ -31,7 +31,7 @@ namespace MPExtended.Services.StreamingService.Transcoders
             base.BuildPipeline(context);
 
             // add metadata injection unit
-            context.Pipeline.AddDataUnit(new FLVMetadataInjector(), 15);
+            context.Pipeline.AddDataUnit(new FLVMetadataInjector(context), 15);
         }
     }
 }
