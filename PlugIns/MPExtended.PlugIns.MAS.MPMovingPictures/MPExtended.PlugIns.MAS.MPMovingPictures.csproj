@@ -56,6 +56,7 @@
     <Compile Include="..\..\GlobalVersion.cs">
       <Link>Properties\GlobalVersion.cs</Link>
     </Compile>
+    <Compile Include="Search.cs" />
     <Compile Include="MPMovingPictures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
